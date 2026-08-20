@@ -358,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <div id="sticky-chapter" style="position:fixed; top:0; left:0; right:0; height:0; overflow:hidden; transition: height 0.25s; background:#fff; border-bottom: 1px solid var(--rule); box-shadow: 0 2px 10px rgba(0,0,0,0.06); z-index: 50; display:flex; align-items:center;">
   <div style="max-width:1400px; margin:0 auto; padding: 0 26px; display:flex; align-items:center; gap:14px; width:100%;">
     <span id="sticky-label" style="background:#1f3b5c; color:#fff; padding:4px 11px; border-radius:14px; font-size:11px; font-weight:800; letter-spacing:0.06em;">01 · SCALE</span>
-    <span id="sticky-question" style="font-size:13px; color:var(--ink); font-weight:500;">How much do HBCUs and MSIs contribute to the STEM pipeline?</span>
+    <span id="sticky-question" style="font-size:13px; color:var(--ink); font-weight:500;">How many STEM graduates come from HBCUs and MSIs?</span>
   </div>
 </div>
 
@@ -368,9 +368,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const stickyLabel = document.getElementById('sticky-label');
   const stickyQuestion = document.getElementById('sticky-question');
   const chapters = [
-    {selector: '#q01-share', label: '01 · SCALE', color: '#1f3b5c', q: 'How much do HBCUs and MSIs contribute to the STEM pipeline?'},
-    {selector: '#q01-designation', label: '02 · PRODUCTION', color: '#9a7410', q: 'Which institutions and priority areas drive STEM production?'},
-    {selector: '#q03-demographics', label: '03 · GAPS', color: '#c8553d', q: 'Where does the federal portfolio underinvest in HBCUs and MSIs?'}
+    {selector: '#q01-share', label: '01 · SCALE', color: '#1f3b5c', q: 'How many STEM graduates come from HBCUs and MSIs?'},
+    {selector: '#q01-designation', label: '02 · PRODUCTION', color: '#9a7410', q: 'Are graduates coming in the fields the country is investing in?'},
+    {selector: '#q03-demographics', label: '03 · GAPS', color: '#c8553d', q: 'Where does federal investment fall short — and what would close the gap?'}
   ];
   
   function updateSticky() {
@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div style="background:#fff; border: 1px solid var(--rule); border-radius: 8px; padding: 28px 32px; margin: 22px 0; max-width: 1080px; box-shadow: 0 2px 8px rgba(31,59,92,0.06);">
       <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: #c8553d; font-weight: 700; margin-bottom: 12px;">THE QUESTION THIS DASHBOARD ANSWERS</div>
       <div style="font-size: 24px; font-weight: 700; color: var(--navy); line-height: 1.35; margin-bottom: 22px; max-width: 940px;">
-        If federal CHIPS and NSTC investments are designed to develop America's emerging-tech workforce, do they reach the institutions already producing it? HBCUs and MSIs collectively produce <span style="color:#1f3b5c; font-weight:700;">30.7% of America's STEM bachelor's degrees</span> but hold only <span style="color:#c8553d;">8.3% of the academic R&amp;D capacity</span> NSF surveys.
+        America is investing billions to build its emerging-tech workforce — computer chips, artificial intelligence, biotechnology. Are those dollars reaching the colleges already producing nearly 1 in 3 of the nation's STEM graduates? HBCUs and MSIs produce <span style="color:#1f3b5c; font-weight:700;">30.7% of America's STEM bachelor's degrees</span> but hold just <span style="color:#c8553d;">8.3% of the nation's academic research funding</span>.
       </div>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 28px 0 14px;">
@@ -528,7 +528,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div style="font-size: 14px; color: var(--ink-soft); line-height: 1.6; max-width: 920px; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--rule);">
-        The pipeline is real. The federal infrastructure to channel its graduates into national-priority research careers is not. At the current pace, doubling the MSI share of federal STEM production would take <strong>~54 years</strong>. CHIPS and NSTC capacity-building investments are designed to accelerate this — but only if the institutions producing the graduates have the research capacity to compete for the grants.
+        The pipeline is real. The federal infrastructure to channel its graduates into national-priority research careers is not. At the current pace, doubling the MSI share of federal STEM production would take <strong>~54 years</strong>. Federal investments like the CHIPS Act are designed to accelerate this — but only if the colleges producing the graduates have the research funding to compete for the grants.
       </div>
     </div>
 
@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <a href="#q01-share" style="background:#fff; border:1px solid var(--rule); border-top: 4px solid #1f3b5c; border-radius: 6px; padding: 22px 22px 20px; text-decoration:none; color:inherit; display:block; transition: transform 0.15s, box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(31,59,92,0.12)';" onmouseout="this.style.transform='';this.style.boxShadow='';">
         <div style="font-size: 28px; font-weight: 800; color: #1f3b5c; line-height: 1; margin-bottom: 12px; opacity: 0.85;">01</div>
         <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #1f3b5c; font-weight: 700; margin-bottom: 8px;">SCALE</div>
-        <div style="font-size: 16px; font-weight: 600; color: var(--navy); line-height: 1.4; margin-bottom: 10px;">How much do America's HBCUs and MSIs contribute to the STEM pipeline — and how has that share grown over a decade?</div>
+        <div style="font-size: 16px; font-weight: 600; color: var(--navy); line-height: 1.4; margin-bottom: 10px;">How many of America's STEM graduates come from HBCUs and MSIs — and is that share growing?</div>
         <div style="font-size: 12px; color: var(--ink-soft); line-height: 1.5; font-style: italic;">→ MSI share of national STEM bachelor's (2013→2022), decade-of-change by race, production by designation type.</div>
         <div style="font-size:11px; color:#1f3b5c; font-weight:600; margin-top:14px; padding-top:10px; border-top:1px solid #eee;">Jump to: Share · Race trends · By designation ›</div>
       </a>
@@ -547,7 +547,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <a href="#q01-designation" style="background:#fff; border:1px solid var(--rule); border-top: 4px solid #c79617; border-radius: 6px; padding: 22px 22px 20px; text-decoration:none; color:inherit; display:block; transition: transform 0.15s, box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(199,150,23,0.18)';" onmouseout="this.style.transform='';this.style.boxShadow='';">
         <div style="font-size: 28px; font-weight: 800; color: #9a7410; line-height: 1; margin-bottom: 12px; opacity: 0.85;">02</div>
         <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #9a7410; font-weight: 700; margin-bottom: 8px;">ALIGNMENT</div>
-        <div style="font-size: 16px; font-weight: 600; color: var(--navy); line-height: 1.4; margin-bottom: 10px;">Which CHIPS and NSTC federal STEM priorities are these institutions already producing graduates for?</div>
+        <div style="font-size: 16px; font-weight: 600; color: var(--navy); line-height: 1.4; margin-bottom: 10px;">Are these institutions producing graduates in the fields the country is investing in — AI, chips, biotech?</div>
         <div style="font-size: 12px; color: var(--ink-soft); line-height: 1.5; font-style: italic;">→ All 19 priority areas (AI, semiconductors, quantum, biotech, hypersonics, etc.) mapped to degree production at each institution.</div>
         <div style="font-size:11px; color:#9a7410; font-weight:600; margin-top:14px; padding-top:10px; border-top:1px solid #eee;">Jump to: Federal STEM priorities ›</div>
       </a>
@@ -555,7 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <a href="#q03-demographics" style="background:#fff; border:1px solid var(--rule); border-top: 4px solid #c8553d; border-radius: 6px; padding: 22px 22px 20px; text-decoration:none; color:inherit; display:block; transition: transform 0.15s, box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(200,85,61,0.18)';" onmouseout="this.style.transform='';this.style.boxShadow='';">
         <div style="font-size: 28px; font-weight: 800; color: #c8553d; line-height: 1; margin-bottom: 12px; opacity: 0.85;">03</div>
         <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #c8553d; font-weight: 700; margin-bottom: 8px;">ASYMMETRY</div>
-        <div style="font-size: 16px; font-weight: 600; color: var(--navy); line-height: 1.4; margin-bottom: 10px;">Where is the federal STEM portfolio underinvesting in HBCUs and MSIs — and what would unlock more capacity?</div>
+        <div style="font-size: 16px; font-weight: 600; color: var(--navy); line-height: 1.4; margin-bottom: 10px;">Where does federal investment fall short of what these institutions already produce — and what would close the gap?</div>
         <div style="font-size: 12px; color: var(--ink-soft); line-height: 1.5; font-style: italic;">→ Three asymmetries in plain view: demographic access to emerging-tech, federal R&amp;D investment, and supply-vs-workforce demand.</div>
         <div style="font-size:11px; color:#c8553d; font-weight:600; margin-top:14px; padding-top:10px; border-top:1px solid #eee;">Jump to: Demographics · R&amp;D capacity · Workforce ›</div>
       </a>
